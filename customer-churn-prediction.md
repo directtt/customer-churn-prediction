@@ -6,7 +6,7 @@ What is a **customer churn** (attrition, turnover)? <br>
 In simple words: **probability of leaving the company.**
 In order to keep business healthy, it is crucial to pay attention to customers with a high churn rate and retain customers with a low churn rate to sustain long-term growth.
 
-Okay, so the target variable is binary: **churn** (yes/no). We can predict customers with a high churn probability, but can how we affect them?
+Okay, so the target variable is binary: **churn** (yes/no). We can predict customers with a high churn probability, but how can we affect them?
 - Send them personalized newsletters
 - Launch a specific promotion 
 - Direct contact through company representatives
