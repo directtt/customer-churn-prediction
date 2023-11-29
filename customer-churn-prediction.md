@@ -112,9 +112,3 @@ For the sake of better understanding, I've prepared a following diagram how retr
 
 Let's go through an example, we've used a time machine and it's 01.01.2023. Originally we have been training and evaluating the model on data from the whole 2022 (or even better training & evaluation on 2021 and just refit on the whole 2022). By making the first predictions, these are predictions for the whole January 2023. We got some churns that haven't been included before, we're updating these churns to dataset with `churn_date=01.01.2023` and excluding old churns with churn_date > 1 year. In the next month, on 02.01.2023, we update active users data with `churn_date=0`, since their activity gets updated during the whole month and repeat the whole retraining & prediction step.
 
-Once again, this isn't included in the diagram, but some human feedback would be appreciated if correct users have been churned.
-
-
-```python
-
-```
