@@ -17,7 +17,7 @@ In practice, we will need to have **one row of data per each user**, this data c
 
 ### Sliding window, 'time-series' concept
 
-Let's do this in that way, consider only **the customers who have left in the last one year** (so we will have last year churns + active users in training data) and try to predict the churn for the future 1 month (alernatively x months). The Model needs to be retrained every 1 month (x months). During each retraining we will exclude users that have churned over one year ago and include new churns from the latest month + new  registered users. Active users (no churn) will stay the same with updated features.
+Let's do this in that way, consider only **the customers who have left in the last one year** (so we will have last year churns + active users in training data) and try to predict the churn for **the future 1 month** (alernatively x months). The model needs to be retrained **every 1 month** (x months). During each retraining we will exclude users that have churned over one year ago and include new churns from the latest month + new  registered users. Active users (no churn) will stay the same with updated features.
 
 Of course, adding churns from the latest month predictions directly to the future training data can make it biased, so it's good to incorporate some human-feedback whether the predicted churn is an actual churn. (at least every 2-3 months).
 
